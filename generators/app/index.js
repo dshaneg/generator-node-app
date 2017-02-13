@@ -146,8 +146,8 @@ module.exports = Generator.extend({
       );
 
       this.fs.copy(
-        this.templatePath('test/.eslintrc.json'),
-        this.destinationPath('test/.eslintrc.json')
+        this.templatePath('test/.eslintrc'),
+        this.destinationPath('test/.eslintrc')
       );
     },
 
