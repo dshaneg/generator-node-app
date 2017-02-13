@@ -7,11 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [0.1.7]
+
+### Fixed
+
+- Fix npmInstall calls to use 'save-dev'
+
+
 ## [0.1.6]
 
 ### Fixed
 
 - Tweak template gitignore so npm will include it
+- Use npm instead of yarn
 
 
 ## [0.1.4] Unreleased

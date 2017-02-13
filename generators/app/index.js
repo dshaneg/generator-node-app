@@ -180,7 +180,7 @@ module.exports = Generator.extend({
       'chai',
       'istanbul'
     ], {
-      dev: true
+      'save-dev': true
     });
   },
 
@@ -189,7 +189,7 @@ module.exports = Generator.extend({
     this.npmInstall([
       'eslint-plugin-import'
     ], {
-      dev: true
+      'save-dev': true
     });
   },
 
@@ -198,7 +198,7 @@ module.exports = Generator.extend({
     this.npmInstall([
       'eslint-config-airbnb-base'
     ], {
-      dev: true
+      'save-dev': true
     });
   }
 });
