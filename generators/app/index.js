@@ -118,8 +118,9 @@ module.exports = Generator.extend({
         this.destinationPath('.gitattributes')
       );
 
+      // npm will not publish .gitignore, so our template leaves out the leading dot
       this.fs.copy(
-        this.templatePath('.gitignore'),
+        this.templatePath('gitignore'),
         this.destinationPath('.gitignore')
       );
     },
