@@ -1,6 +1,6 @@
 {
   "name": "@dshaneg/generator-node-app",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A node application generator",
   "author": {
     "name": "Shane Gibbons",
