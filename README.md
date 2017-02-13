@@ -1,20 +1,20 @@
-# generator-shane [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-node-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > A test generator
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-shane using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-node-app using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-shane
+npm install -g @dshaneg/generator-node-app
 ```
 
 Then generate your new project:
 
 ```bash
-yo shane
+yo @dshaneg/node-app
 ```
 
 ## Getting To Know Yeoman
@@ -26,11 +26,11 @@ yo shane
 
 ## License
 
-Apache-2.0 © [Shane Gibbons](http://blog.shane-gibbons.com/)
+MIT © [Shane Gibbons](http://blog.shane-gibbons.com/)
 
-[npm-image]: https://badge.fury.io/js/generator-shane.svg
-[npm-url]: https://npmjs.org/package/generator-shane
-[travis-image]: https://travis-ci.org/dshaneg/generator-shane.svg?branch=master
-[travis-url]: https://travis-ci.org/dshaneg/generator-shane
-[daviddm-image]: https://david-dm.org/dshaneg/generator-shane.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/dshaneg/generator-shane
+[npm-image]: https://badge.fury.io/js/%40dshaneg%2Fgenerator-node-app.svg
+[npm-url]: https://npmjs.org/package/@dshaneg/generator-node-app
+[travis-image]: https://travis-ci.org/dshaneg/generator-node-app.svg?branch=master
+[travis-url]: https://travis-ci.org/dshaneg/generator-node-app
+[daviddm-image]: https://david-dm.org/dshaneg/generator-node-app.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/dshaneg/generator-node-app
