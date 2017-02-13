@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "func-names": "off",
+    "comma-dangle": "off",
+    "no-use-before-define": ["error", "nofunc"],
+    "no-prototype-builtins": "off",
+    "strict": ["error", "safe"],
+    "no-console": "off",
+    "prefer-rest-params": "off",
+    "max-len": "off",
+    "linebreak-style": "off"
+  }
+}
