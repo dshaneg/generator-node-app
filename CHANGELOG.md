@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-## [0.1.3]
+## [0.1.4]
+
+### Fixed
+
+- Include missing linting dependencies
+
+## [0.1.3] Unreleased
 
 ### Fixed
 
