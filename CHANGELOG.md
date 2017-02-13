@@ -7,7 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-## [0.1.4]
+## [0.1.6]
+
+### Fixed
+
+- Tweak template gitignore so npm will include it
+
+
+## [0.1.4] Unreleased
 
 ### Fixed
 
