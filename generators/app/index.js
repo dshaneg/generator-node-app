@@ -164,17 +164,6 @@ module.exports = Generator.extend({
     }
   },
 
-  install: function () {
-
-
-
-    // this.installDependencies({
-    //   npm: false,
-    //   bower: false,
-    //   yarn: true
-    // });
-  },
-
   end: function () {
     this.log(yosay(
       'All done! Now go write some code!'
