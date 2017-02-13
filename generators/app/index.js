@@ -100,8 +100,8 @@ module.exports = Generator.extend({
       );
 
       this.fs.copy(
-        this.templatePath('.eslintrc'),
-        this.destinationPath('.eslintrc')
+        this.templatePath('.eslintrc.json'),
+        this.destinationPath('.eslintrc.json')
       );
     },
 
@@ -141,13 +141,13 @@ module.exports = Generator.extend({
 
     test: function () {
       this.fs.copy(
-        this.templatePath('test/class1-test.js'),
-        this.destinationPath('test/class1-test.js')
+        this.templatePath('test/class1.js'),
+        this.destinationPath('test/class1.js')
       );
 
       this.fs.copy(
-        this.templatePath('test/.eslintrc'),
-        this.destinationPath('test/.eslintrc')
+        this.templatePath('test/.eslintrc.json'),
+        this.destinationPath('test/.eslintrc.json')
       );
     },
 
