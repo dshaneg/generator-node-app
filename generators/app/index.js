@@ -174,7 +174,7 @@ module.exports = Generator.extend({
   },
 
   installCoreDevDependencies() {
-    this.yarnInstall([
+    this.npmInstall([
       'eslint',
       'mocha',
       'chai',
@@ -186,7 +186,7 @@ module.exports = Generator.extend({
 
   installEslintPluginImport() {
     // separated to keep eslint-plugin-import from complaining about unmet peer depenencies
-    this.yarnInstall([
+    this.npmInstall([
       'eslint-plugin-import'
     ], {
       dev: true
@@ -195,7 +195,7 @@ module.exports = Generator.extend({
 
   installAirBnbBase() {
     // separated to keep airbnb-base from complaining about unmet peer depenencies
-    this.yarnInstall([
+    this.npmInstall([
       'eslint-config-airbnb-base'
     ], {
       dev: true
