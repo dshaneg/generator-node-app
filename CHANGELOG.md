@@ -7,12 +7,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.0.0]
+
+### Added
+
+- Travis releases to npm on tag
+
+### Fixed
+
+- Fix eslint problems
+
 ## [0.1.7]
 
 ### Fixed
 
 - Fix npmInstall calls to use 'save-dev'
-
 
 ## [0.1.6]
 
@@ -20,7 +29,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Tweak template gitignore so npm will include it
 - Use npm instead of yarn
-
 
 ## [0.1.4] Unreleased
 
