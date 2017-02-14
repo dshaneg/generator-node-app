@@ -1,18 +1,21 @@
 'use strict';
-var _ = require('lodash');
-var extend = _.merge;
-var Generator = require('yeoman-generator');
-var chalk = require('chalk');
-var yosay = require('yosay');
+
+const _ = require('lodash');
+
+const extend = _.merge;
+
+const Generator = require('yeoman-generator');
+const chalk = require('chalk');
+const yosay = require('yosay');
 
 module.exports = Generator.extend({
-  prompting: function () {
+  prompting() {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to dshaneg\'s ' + chalk.red('node-app') + ' generator!'
+      `Welcome to dshaneg's ${chalk.red('node-app')} generator!`
     ));
 
-    var prompts = [{
+    const prompts = [{
       type: 'text',
       name: 'name',
       message: 'Your app\'s name?',
@@ -43,14 +46,14 @@ module.exports = Generator.extend({
       store: true
     }];
 
-    return this.prompt(prompts).then(function (props) {
+    return this.prompt(prompts).then((props) => {
       // To access props later use this.props.someAnswer;
       this.props = props;
-    }.bind(this));
+    });
   },
 
   writing: {
-    package: function () {
+    package() {
       const currentPkg = this.fs.readJSON(this.destinationPath('package.json'), {});
 
       const pkg = extend({
@@ -81,7 +84,7 @@ module.exports = Generator.extend({
       this.fs.writeJSON(this.destinationPath('package.json'), pkg);
     },
 
-    lib: function () {
+    lib() {
       this.fs.copy(
         this.templatePath('lib/index.js'),
         this.destinationPath('lib/index.js')
@@ -93,7 +96,7 @@ module.exports = Generator.extend({
       );
     },
 
-    eslint: function () {
+    eslint() {
       this.fs.copy(
         this.templatePath('.eslintignore'),
         this.destinationPath('.eslintignore')
@@ -105,14 +108,14 @@ module.exports = Generator.extend({
       );
     },
 
-    beautify: function () {
+    beautify() {
       this.fs.copy(
         this.templatePath('.jsbeautifyrc'),
         this.destinationPath('.jsbeautifyrc')
       );
     },
 
-    git: function () {
+    git() {
       this.fs.copy(
         this.templatePath('.gitattributes'),
         this.destinationPath('.gitattributes')
@@ -125,7 +128,7 @@ module.exports = Generator.extend({
       );
     },
 
-    markdown: function () {
+    markdown() {
       this.fs.copy(
         this.templatePath('CHANGELOG.md'),
         this.destinationPath('CHANGELOG.md')
@@ -140,7 +143,7 @@ module.exports = Generator.extend({
       );
     },
 
-    test: function () {
+    test() {
       this.fs.copy(
         this.templatePath('test/class1.js'),
         this.destinationPath('test/class1.js')
@@ -152,7 +155,7 @@ module.exports = Generator.extend({
       );
     },
 
-    vscode: function () {
+    vscode() {
       this.fs.copy(
         this.templatePath('.vscode/extensions.json'),
         this.destinationPath('.vscode/extensions.json')
@@ -165,7 +168,7 @@ module.exports = Generator.extend({
     }
   },
 
-  end: function () {
+  end() {
     this.log(yosay(
       'All done! Now go write some code!'
     ));

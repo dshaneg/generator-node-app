@@ -10,7 +10,7 @@ const nsp = require('gulp-nsp');
 const plumber = require('gulp-plumber');
 
 gulp.task('static', () =>
-  gulp.src('**/*.js')
+  gulp.src(['**/*.js', '!generators/*/templates/*.js', '!coverage/*'])
   .pipe(excludeGitignore())
   .pipe(eslint({ configFile: '.eslintrc.json' }))
   .pipe(eslint.format())
@@ -24,7 +24,7 @@ gulp.task('nsp', (cb) => {
 });
 
 gulp.task('pre-test', () =>
-  gulp.src('generators/**/*.js')
+  gulp.src(['generators/**/*.js', '!generators/*/templates/*.js'])
   .pipe(excludeGitignore())
   .pipe(istanbul({
     includeUntested: true
