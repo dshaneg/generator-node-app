@@ -1,7 +1,14 @@
 language: node_js
 node_js:
-  - v7
-  - v6
-  - v5
-
-
+- v7
+- v6
+- v5
+deploy:
+  provider: npm
+  email: shane.gibbons@gmail.com
+  api_key:
+    secure: Osv2+R9+sooAcdmJ3W+Sqi6n6u+zINBn1fp+jNB7S2eedD+lkce3MY+odbMcTDTNjmwvajPW8rVSjSAiphMbn2xIFFbQboEMYu4Mh2yWhY0n2bG9YQ2cQiaHKi9LMOmc2TdH1ytEkLfKBWTxQa1bXLWXopnyDSsPdgtytxWa3pMkIlOaM9RTyyGgh0D25H6qfwPH3LVnPT43QWb9ryfiOSjQI5jDqHNmNeUfN5fje87gLSGCZg0dpTp5QujMdgysk3l0t34pX/q4eg+NlPvkpdYACIAhI78LL5DdmV9JLH0YQLXQKi0hK4zNBT7iWkKRX3ojuwl5WX4ICAtKBQk64fp8cdt1qmosYtAY0HlD8aj361zeo2sWAfTxBAjfqWxD80l7sgGab2jxcUTQf0+yW+Or0ooA43Rmcdgbxr4sbwoRxm3BIYe5/G6GvXsrSGiYQnNJnuk5iLxcu7bSZM5u/cvjRSrLYIVi/ETvfrtDXpbRdjMpYy2Trbb/8hcXnPsvFt8Cv2jsLeVjycAzxgM64Ilx9/ID4tnezyeemBuOScRNjmZIzdVriHS6qt1pagdS2+nslc/dsBwo8XbrtBDw66g9mSaXKDG46iWr+8LCujVLg1SjONHjxbHO8beOQz5VGC8YXETl+P3bSfC2CakA8xLlRhDp8cZTjw2kBWIodds=
+  on:
+    tags: true
+    branch: master
+    repo: dshaneg/generator-node-app
