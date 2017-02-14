@@ -86,12 +86,12 @@ module.exports = Generator.extend({
 
     lib() {
       this.fs.copy(
-        this.templatePath('lib/index.js'),
+        this.templatePath('lib/index.js_'),
         this.destinationPath('lib/index.js')
       );
 
       this.fs.copy(
-        this.templatePath('lib/class1.js'),
+        this.templatePath('lib/class1.js_'),
         this.destinationPath('lib/class1.js')
       );
     },
@@ -145,7 +145,7 @@ module.exports = Generator.extend({
 
     test() {
       this.fs.copy(
-        this.templatePath('test/class1.js'),
+        this.templatePath('test/class1.js_'),
         this.destinationPath('test/class1.js')
       );
 
