@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.1.0]
+
+### Added
+
+- Markdownlint config file. Relaxes rule about duplicate headers.
+
 ## [1.0.0]
 
 ### Added
