@@ -1,6 +1,6 @@
 # generator-node-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-> A test generator
+> A Yeoman generator to scaffold a simple node.js application. Tweaked for [Visual Studio Code] users.
 
 ## Installation
 
@@ -11,7 +11,8 @@ npm install -g yo
 npm install -g @dshaneg/generator-node-app
 ```
 
-Then generate your new project:
+Then generate your new project.
+Be sure to create a directory for your application and make it current before running `yo`.
 
 ```bash
 yo @dshaneg/node-app
@@ -34,3 +35,4 @@ MIT © [Shane Gibbons](http://blog.shane-gibbons.com/)
 [travis-url]: https://travis-ci.org/dshaneg/generator-node-app
 [daviddm-image]: https://david-dm.org/dshaneg/generator-node-app.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/dshaneg/generator-node-app
+[Visual Studio Code]: https://code.visualstudio.com/
