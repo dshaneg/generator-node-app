@@ -108,6 +108,13 @@ module.exports = Generator.extend({
       );
     },
 
+    markdownlint() {
+      this.fs.copy(
+        this.templatePath('.markdownlint.json'),
+        this.destinationPath('.markdownlint.json')
+      );
+    },
+
     beautify() {
       this.fs.copy(
         this.templatePath('.jsbeautifyrc'),
