@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.1.3]
+
+### Fixed
+
+- Fix template unit tests. The broke on node versions before 6
+
 ## [1.0.0]
 
 ### Added
