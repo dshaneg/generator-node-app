@@ -1,8 +1,12 @@
 'use strict';
 
 class Class1 {
-  constructor(incrementValue = 1) {
-    this.incrementValue = incrementValue;
+  constructor(incrementValue) {
+    if (incrementValue !== 0 && !incrementValue) {
+      this.incrementValue = 1;
+    } else {
+      this.incrementValue = incrementValue;
+    }
   }
 
   Increment(num) {
